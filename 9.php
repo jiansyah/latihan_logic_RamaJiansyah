@@ -24,6 +24,7 @@ class Statistika {
     }
 
     public static function median($data) {
+        sort($data);
         $jumlah = count($data);
         $median = ($data[$jumlah/2] + $data[$jumlah/2-1])/2;
         echo $median;
